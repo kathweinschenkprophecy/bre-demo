@@ -1,0 +1,441 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.6.0",
+        "pyPiVersion" : "1.9.28"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/L0_setup_sample_data",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "L0_setup_sample_data",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true
+    },
+    "language" : "python",
+    "fabricId" : "13781",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "nathandais2024prophecyioteam.samplebre.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "nathandais2024prophecyioteam.samplebredemoruleset.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "39483",
+      "projectName" : "Sample_BRE_Demo_Ruleset",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
+        "name" : "plibMaven",
+        "version" : "8.6.0",
+        "id" : "112206751",
+        "createdAt" : "2025-01-08T09:54:57.160835Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
+        "name" : "plibPypi",
+        "version" : "1.9.28",
+        "id" : "661473917",
+        "createdAt" : "2025-01-08T09:54:57.160835Z"
+      } ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "l0_setup_sample_data",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "ub8CQhXfSYErjErQE9avt$$M75-MjeW8pauO-5aUAUAG",
+    "source" : "75-faUk3CL-TfkR2pfuDR$$WNQV3ZhHivwMqXiE0EIK6",
+    "sourcePort" : "a41HBZVyz7pZUy-GaVakr$$7yYcsGPOWIDwZhytOCw4P",
+    "target" : "ykif5QZd7LqfaefFws0Dn$$fyV2xOnoR0G2CumPyCJhp",
+    "targetPort" : "3kdPXs32yZaL-4fA72FEH$$i1YceWWelW4qFq6X1Wzrt"
+  }, {
+    "id" : "bJdTJ-JzVp6ks3vdbwlXU$$PviVPpj1i4pXcZYgoROrJ",
+    "source" : "c7gUSHScklPSRR9mOQkVn$$TEAlSXa1OTzv7z4QO9ksG",
+    "sourcePort" : "RlgSJsMXgogUSDRDEjfmk$$_N8CZyT1q4KAfB7G4U4Gt",
+    "target" : "XwTkOllmd-P6g4G7RucBK$$oaplVOfn9jkbaOcZp4Fvu",
+    "targetPort" : "slNZ8rEJPF17zfeMDsnfU$$rETiSuTRqSEXOgdgcoaHO"
+  } ],
+  "processes" : {
+    "75-faUk3CL-TfkR2pfuDR$$WNQV3ZhHivwMqXiE0EIK6" : {
+      "id" : "75-faUk3CL-TfkR2pfuDR$$WNQV3ZhHivwMqXiE0EIK6",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "create_sample_customer_data",
+        "slug" : "create_sample_customer_data",
+        "x" : -320,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Generates a sample dataset of customer information for testing and analysis purposes.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "a41HBZVyz7pZUy-GaVakr$$7yYcsGPOWIDwZhytOCw4P",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "# Sample Customer Data\ncustomer_data = [\n    (1, \"Alice\", \"New York\", 25, 800, \"2024-01-01\"),\n    (2, \"Bob\", \"Los Angeles\", 30, 300, \"2023-12-15\"),\n    (3, \"Charlie\", \"Chicago\", 35, 700, \"2023-11-01\"),\n    (4, \"David\", \"Seattle\", 28, 100, \"2024-12-05\"),\n    (5, \"Eve\", \"San Francisco\", 40, 900, \"2023-10-10\"),\n]\n\ncustomer_columns = [\"customer_id\", \"name\", \"location\", \"age\", \"spending\", \"last_purchase_date\"]\n\nout0 = spark.createDataFrame(customer_data, customer_columns)\n",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "c7gUSHScklPSRR9mOQkVn$$TEAlSXa1OTzv7z4QO9ksG" : {
+      "id" : "c7gUSHScklPSRR9mOQkVn$$TEAlSXa1OTzv7z4QO9ksG",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "create_order_dataframe",
+        "slug" : "create_order_dataframe",
+        "x" : -320,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Generates a structured dataset of customer orders, including details such as order ID, customer ID, order date, and order amount.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "RlgSJsMXgogUSDRDEjfmk$$_N8CZyT1q4KAfB7G4U4Gt",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "order_data = [\n    (101, 1, \"2025-01-03\", 200),\n    (102, 2, \"2024-12-16\", 150),\n    (103, 3, \"2024-12-15\", 300),\n    (104, 1, \"2024-01-10\", 350),\n    (105, 4, \"2024-12-06\", 50),\n]\n\norder_columns = [\"order_id\", \"customer_id\", \"order_date\", \"order_amount\"]\n\nout0 = spark.createDataFrame(order_data, order_columns)",
+        "scriptMethodHeader" : "def Script(spark: SparkSession) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "ykif5QZd7LqfaefFws0Dn$$fyV2xOnoR0G2CumPyCJhp" : {
+      "id" : "ykif5QZd7LqfaefFws0Dn$$fyV2xOnoR0G2CumPyCJhp",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Customer",
+        "slug" : "Customer",
+        "x" : -140,
+        "y" : -220,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "3kdPXs32yZaL-4fA72FEH$$i1YceWWelW4qFq6X1Wzrt",
+          "slug" : "create_sample_customer_data",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Customer"
+      }
+    },
+    "XwTkOllmd-P6g4G7RucBK$$oaplVOfn9jkbaOcZp4Fvu" : {
+      "id" : "XwTkOllmd-P6g4G7RucBK$$oaplVOfn9jkbaOcZp4Fvu",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Orders",
+        "slug" : "Orders",
+        "x" : -140,
+        "y" : -20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Exports order data to a CSV file for reporting and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "slNZ8rEJPF17zfeMDsnfU$$rETiSuTRqSEXOgdgcoaHO",
+          "slug" : "create_order_dataframe",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Orders"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}

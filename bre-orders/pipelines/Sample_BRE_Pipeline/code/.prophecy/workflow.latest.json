@@ -1,0 +1,1099 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1",
+      "unitTestNullDataMigrated" : true
+    },
+    "functions" : {
+      "businessRules" : {
+        "rules" : [ ],
+        "sharedRules" : [ ]
+      }
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.6.0",
+        "pyPiVersion" : "1.9.28"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/Sample_BRE_Pipeline",
+    "sourceSuggestions" : [ ],
+    "pipelineSettingsInfo" : {
+      "applicationName" : "Sample_BRE_Pipeline",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true,
+      "isNullValuesInUnitTestsEnabled" : true
+    },
+    "language" : "python",
+    "fabricId" : "13781",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "nathandais2024prophecyioteam.samplebre.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "nathandais2024prophecyioteam.samplebredemoruleset.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "39483",
+      "projectName" : "Sample_BRE_Demo_Ruleset",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
+        "name" : "plibMaven",
+        "version" : "8.6.0",
+        "id" : "112206751",
+        "createdAt" : "2025-01-08T09:54:57.160835Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
+        "name" : "plibPypi",
+        "version" : "1.9.28",
+        "id" : "661473917",
+        "createdAt" : "2025-01-08T09:54:57.160835Z"
+      } ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "sample_bre_pipeline",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "AX0Vt6OQ",
+    "source" : "1IR8NdVEyJ135QRhdfhft$$JUeFDo3GkclqdXiETuteh",
+    "sourcePort" : "qWf3b2LP_PK2PM_14z5K_$$ek7FMOtvUJsqexcFZI_T0",
+    "target" : "dNyyMeJI",
+    "targetPort" : "wSU7LDSc"
+  }, {
+    "id" : "uBWH3LsB72Sz4BAo0u6X2$$Q1Gcfvt1s5wqCTuREwZCc",
+    "source" : "NM0D5n8T5Xx3CyIVMpBxc$$gi_dwmknjLYxh_UPco3oP",
+    "sourcePort" : "Igu8Au0Ap3kTjqnTp8i8g$$h7DQUSc4MBbsGC43_a2CP",
+    "target" : "MlhWF3pNhUMR6dU7xWKoC$$Nkx-qDbQPpia4356buM1q",
+    "targetPort" : "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P"
+  }, {
+    "id" : "vAsxpG5IM0GMIGuuJnCv2$$ebaKsGAZogu_Dqq9GUJi4",
+    "source" : "gFB3XHVuX59p26oDHDj5q",
+    "sourcePort" : "GUpzxcNNXRaio59zDZIev",
+    "target" : "MlhWF3pNhUMR6dU7xWKoC$$Nkx-qDbQPpia4356buM1q",
+    "targetPort" : "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP"
+  }, {
+    "id" : "tH8QxmInYk3NprxDjaKme$$ExIQapQgeRrlhC9xIfLzs",
+    "source" : "MlhWF3pNhUMR6dU7xWKoC$$Nkx-qDbQPpia4356buM1q",
+    "sourcePort" : "2HgkiqVcxGNF6RZRa_1q6$$7mo_POp3uaVXfytwNZYU6",
+    "target" : "1IR8NdVEyJ135QRhdfhft$$JUeFDo3GkclqdXiETuteh",
+    "targetPort" : "PoMQbbTmJLdwcBMNHG8EQ$$I0BITsavBV7hr7XP4blJZ"
+  }, {
+    "id" : "J-9jhb0kiPs-5iGUVMQzd$$o3Z9e_DqubOTyKwb9Q6ng",
+    "source" : "dNyyMeJI",
+    "sourcePort" : "QG8Hmm2I",
+    "target" : "lyRkHlftaKP1fikOR_qdX$$sS_BEYK68mrjy12oN_RfC",
+    "targetPort" : "l7BvV00fyPW_AJoE3E956$$hA5-4A71jGhiI4oqGdlwE"
+  }, {
+    "id" : "IMtFDpeFihhdT893k_XFA$$qOeyEM9fj-r6IG5V55uH0",
+    "source" : "lyRkHlftaKP1fikOR_qdX$$sS_BEYK68mrjy12oN_RfC",
+    "sourcePort" : "v2wqloKoIFfYEYINSTHZn$$H2S7pT19AZe76N8Q_-Fnh",
+    "target" : "aNVU1yOzgu0h4KiMLXiIc$$KddsKNnYvE42aQQf23G5o",
+    "targetPort" : "iRVcnJCt2x4yqTeEN-ub2$$MTund4GVVXcwftjXaB8N5"
+  } ],
+  "processes" : {
+    "1IR8NdVEyJ135QRhdfhft$$JUeFDo3GkclqdXiETuteh" : {
+      "id" : "1IR8NdVEyJ135QRhdfhft$$JUeFDo3GkclqdXiETuteh",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "AddRule_IdentifyRecentOrders",
+        "slug" : "AddRule_IdentifyRecentOrders",
+        "x" : -140,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Transforms data to highlight recent orders for better visibility and analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PoMQbbTmJLdwcBMNHG8EQ$$I0BITsavBV7hr7XP4blJZ",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "qWf3b2LP_PK2PM_14z5K_$$ek7FMOtvUJsqexcFZI_T0",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "IdentifyRecentOrders()"
+            },
+            "param_errors" : [ {
+              "paramName" : "order_date",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "gFB3XHVuX59p26oDHDj5q" : {
+      "id" : "gFB3XHVuX59p26oDHDj5q",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "load_orders_data",
+        "slug" : "load_orders_data",
+        "x" : -520,
+        "y" : -100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Loads order data from a CSV file, providing a structured view of customer orders for analysis.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GUpzxcNNXRaio59zDZIev",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Orders"
+      }
+    },
+    "dNyyMeJI" : {
+      "id" : "dNyyMeJI",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "total_revenue_per_customer",
+        "slug" : "total_revenue_per_customer",
+        "x" : 60,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Calculates total revenue generated by each customer while providing insights into their last purchase and overall spending habits.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "wSU7LDSc",
+          "slug" : "SchemaTransform_1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_recent_order",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "QG8Hmm2I",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(name)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "location",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(location)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "spending",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(spending)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "total_order_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "SUM(order_amount)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "last_purchase_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(last_purchase_date)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "is_recent_order",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(is_recent_order)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "wSU7LDSc##is_recent_order", "wSU7LDSc##customer_id", "wSU7LDSc##location", "wSU7LDSc##last_purchase_date", "wSU7LDSc##name", "wSU7LDSc##order_amount", "wSU7LDSc##spending" ],
+        "groupBy" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/Aggregate",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "aNVU1yOzgu0h4KiMLXiIc$$KddsKNnYvE42aQQf23G5o" : {
+      "id" : "aNVU1yOzgu0h4KiMLXiIc$$KddsKNnYvE42aQQf23G5o",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "AddRule_PromoOffers",
+        "slug" : "AddRule_PromoOffers",
+        "x" : 400,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Applies promotional codes to customer data for enhanced marketing strategies.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "iRVcnJCt2x4yqTeEN-ub2$$MTund4GVVXcwftjXaB8N5",
+          "slug" : "SchemaTransform_2",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_recent_order",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "high_value_flag",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "hkBHKkBkmcXdNo7e3b2tQ$$0hWr1Fl_iCGiqpLDBX8YQ",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "PromoCodeRule()"
+            },
+            "param_errors" : [ {
+              "paramName" : "spending",
+              "hasError" : false
+            }, {
+              "paramName" : "high_value_flag",
+              "hasError" : false
+            }, {
+              "paramName" : "is_recent_order",
+              "hasError" : false
+            }, {
+              "paramName" : "last_purchase_date",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "lyRkHlftaKP1fikOR_qdX$$sS_BEYK68mrjy12oN_RfC" : {
+      "id" : "lyRkHlftaKP1fikOR_qdX$$sS_BEYK68mrjy12oN_RfC",
+      "component" : "SchemaTransform",
+      "metadata" : {
+        "label" : "AddRule_IdentifyHighValueCustomers",
+        "slug" : "AddRule_IdentifyHighValueCustomers",
+        "x" : 240,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Enhances customer revenue data by tagging high-value customers for targeted marketing efforts.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "l7BvV00fyPW_AJoE3E956$$hA5-4A71jGhiI4oqGdlwE",
+          "slug" : "total_revenue_by_customer",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "is_recent_order",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "v2wqloKoIFfYEYINSTHZn$$H2S7pT19AZe76N8Q_-Fnh",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "sql",
+        "importString" : "",
+        "transformations" : [ {
+          "AddRule" : {
+            "expression" : {
+              "format" : "sql",
+              "expression" : "IdentifyHighValueCustomers()"
+            },
+            "param_errors" : [ {
+              "paramName" : "spending",
+              "hasError" : false
+            }, {
+              "paramName" : "total_order_amount",
+              "hasError" : false
+            } ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "AddRule",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
+        } ],
+        "activeTab" : "transformations",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "MlhWF3pNhUMR6dU7xWKoC$$Nkx-qDbQPpia4356buM1q" : {
+      "id" : "MlhWF3pNhUMR6dU7xWKoC$$Nkx-qDbQPpia4356buM1q",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "customer_orders_details",
+        "slug" : "customer_orders_details",
+        "x" : -320,
+        "y" : -200,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Links customer details with their corresponding orders, providing insights into customer demographics and purchasing behavior.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P",
+          "slug" : "Customer",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "age",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "spending",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_purchase_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP",
+          "slug" : "Orders",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_amount",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "2HgkiqVcxGNF6RZRa_1q6$$7mo_POp3uaVXfytwNZYU6",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "Orders",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "(Customer.customer_id = Orders.customer_id)"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "order_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Orders.order_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "order_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(Orders.order_date as date)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "order_amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Orders.order_amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "age",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Customer.age"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Customer.customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "spending",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Customer.spending"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "location",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Customer.location"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "Customer.name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "last_purchase_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "cast(Customer.last_purchase_date as date)"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P",
+          "alias" : "Customer",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP",
+          "alias" : "Orders",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP##customer_id", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##customer_id", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##last_purchase_date", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##location", "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP##order_amount", "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP##order_id", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##customer_id", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##name", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##spending", "d45cG5gtkJrYSSmyhBWHF$$yT2kDAcGJg21NX5Q4IjcP##order_date", "BrotRVCyx-48gUH1uAN1d$$LaoV2Br--kDooRGFEmO2P##age" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "Customer"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/Join",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "NM0D5n8T5Xx3CyIVMpBxc$$gi_dwmknjLYxh_UPco3oP" : {
+      "id" : "NM0D5n8T5Xx3CyIVMpBxc$$gi_dwmknjLYxh_UPco3oP",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "load_customers_data",
+        "slug" : "load_customers_data",
+        "x" : -520,
+        "y" : -300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Loads customer data from a CSV file, providing essential information for analysis and decision-making.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Igu8Au0Ap3kTjqnTp8i8g$$h7DQUSc4MBbsGC43_a2CP",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/Customer"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
