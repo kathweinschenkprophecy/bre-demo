@@ -27,7 +27,7 @@
       "isNullValuesInUnitTestsEnabled" : true
     },
     "language" : "python",
-    "fabricId" : "13781",
+    "fabricId" : "19201",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
