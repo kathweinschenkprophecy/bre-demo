@@ -319,7 +319,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Enhances the dataset by adding promotional code information, potentially increasing marketing effectiveness.",
+        "comment" : "Modifies the data structure to include promotional codes and standardizes customer identifier naming.",
         "autoUpdateComment" : true
       },
       "ports" : {
