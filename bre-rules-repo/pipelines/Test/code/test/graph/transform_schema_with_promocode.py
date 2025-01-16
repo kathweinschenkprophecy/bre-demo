@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from test.config.ConfigStore import *
 from test.functions import *
 
-def SchemaTransform_1(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.withColumn(get_alias(PromoCodeRule()), PromoCodeRule())
+def transform_schema_with_promocode(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.withColumn(get_alias(PromoCodeRule()), PromoCodeRule()).drop("is_recent_order")
