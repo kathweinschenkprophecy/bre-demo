@@ -7,4 +7,4 @@ from test.config.ConfigStore import *
 from test.functions import *
 
 def transform_schema_with_promocode(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.withColumn(get_alias(PromoCodeRule()), PromoCodeRule()).drop("is_recent_order")
+    return in0.withColumn(get_alias(PromoCodeRule()), PromoCodeRule()).withColumnRenamed("customer_id", "cust_id")

@@ -319,7 +319,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Updates the data schema to include promotional code information while removing outdated order indicators.",
+        "comment" : "Enhances the dataset by adding promotional code information, potentially increasing marketing effectiveness.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -455,12 +455,12 @@
             }
           },
           "DropColumn" : {
-            "sourceColumn" : "is_recent_order"
+            "sourceColumn" : ""
           },
-          "kind" : "DropColumn",
+          "kind" : "RenameColumn",
           "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
+            "sourceColumn" : "customer_id",
+            "targetColumn" : "cust_id"
           },
           "AddReplaceColumn" : {
             "sourceColumn" : "",
@@ -471,7 +471,7 @@
           }
         } ],
         "activeTab" : "transformations",
-        "columnsSelector" : [ "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##is_recent_order" ]
+        "columnsSelector" : [ "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##customer_id" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
