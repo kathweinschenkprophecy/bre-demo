@@ -27,7 +27,7 @@
       "isNullValuesInUnitTestsEnabled" : true
     },
     "language" : "python",
-    "fabricId" : "19201",
+    "fabricId" : "19386",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -319,7 +319,7 @@
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
-        "comment" : "Updates the data schema to include promotional code information while removing outdated order indicators.",
+        "comment" : "Modifies the customer data schema to include a promotional code while streamlining the dataset by removing unnecessary columns.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -469,9 +469,39 @@
               "format" : "python"
             }
           }
+        }, {
+          "AddRule" : {
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            },
+            "param_errors" : [ ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : ""
+          },
+          "kind" : "RenameColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "customer_id",
+            "targetColumn" : "customerid"
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
         } ],
         "activeTab" : "transformations",
-        "columnsSelector" : [ "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##is_recent_order" ]
+        "columnsSelector" : [ "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##is_recent_order", "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##customer_id" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
