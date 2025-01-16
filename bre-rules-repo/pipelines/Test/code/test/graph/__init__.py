@@ -1,3 +1,3 @@
-from .SchemaTransform_1 import SchemaTransform_1
 from .sample_customer_data import sample_customer_data
+from .transform_schema_with_promocode import transform_schema_with_promocode
 from .reformatted_customer_data import reformatted_customer_data

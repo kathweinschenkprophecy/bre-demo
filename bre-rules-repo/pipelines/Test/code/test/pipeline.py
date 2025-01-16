@@ -9,7 +9,7 @@ from test.graph import *
 def pipeline(spark: SparkSession) -> None:
     df_sample_customer_data = sample_customer_data(spark)
     df_reformatted_customer_data = reformatted_customer_data(spark, df_sample_customer_data)
-    df_SchemaTransform_1 = SchemaTransform_1(spark, df_reformatted_customer_data)
+    df_transform_schema_with_promocode = transform_schema_with_promocode(spark, df_reformatted_customer_data)
 
 def main():
     spark = SparkSession.builder\

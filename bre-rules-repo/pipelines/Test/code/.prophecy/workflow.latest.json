@@ -311,14 +311,15 @@
       "id" : "x9tQlGnivlYAq40TLZ8VF$$hzaIw0uC24lo0mB2PjC7R",
       "component" : "SchemaTransform",
       "metadata" : {
-        "label" : "SchemaTransform_1",
-        "slug" : "SchemaTransform_1",
+        "label" : "transform_schema_with_promocode",
+        "slug" : "transform_schema_with_promocode",
         "x" : 40,
         "y" : -200,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
         "isImported" : false,
+        "comment" : "Updates the data schema to include promotional code information while removing outdated order indicators.",
         "autoUpdateComment" : true
       },
       "ports" : {
@@ -438,9 +439,39 @@
               "format" : "python"
             }
           }
+        }, {
+          "AddRule" : {
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            },
+            "param_errors" : [ ]
+          },
+          "MissingColumn" : {
+            "sourceColumn" : "",
+            "defaultValue" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          },
+          "DropColumn" : {
+            "sourceColumn" : "is_recent_order"
+          },
+          "kind" : "DropColumn",
+          "RenameColumn" : {
+            "sourceColumn" : "",
+            "targetColumn" : ""
+          },
+          "AddReplaceColumn" : {
+            "sourceColumn" : "",
+            "expression" : {
+              "expression" : "",
+              "format" : "python"
+            }
+          }
         } ],
         "activeTab" : "transformations",
-        "columnsSelector" : [ ]
+        "columnsSelector" : [ "0g97LOgpQMnEkqazTnaTC$$-G5c1KzU7TLQgzKUeA72A##is_recent_order" ]
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.39&projectSubscriptionProjectId=12654&path=gems/SchemaTransform",
