@@ -27,14 +27,14 @@
       "isNullValuesInUnitTestsEnabled" : true
     },
     "language" : "python",
-    "fabricId" : "13781",
+    "fabricId" : "204",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "nathandais2024prophecyioteam.samplebre.functions",
-      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions", "nathandais2024prophecyioteam.samplebredemoruleset.functions" ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -61,31 +61,13 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "12654",
+      "projectUID" : "224",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "12655",
+      "projectUID" : "225",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
-    }, {
-      "projectUID" : "39483",
-      "projectName" : "Sample_BRE_Demo_Ruleset",
-      "externalDependencies" : [ {
-        "type" : "plibMaven",
-        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
-        "name" : "plibMaven",
-        "version" : "8.6.0",
-        "id" : "112206751",
-        "createdAt" : "2025-01-08T09:54:57.160835Z"
-      }, {
-        "type" : "plibPypi",
-        "modifiedAt" : "2025-01-08T09:54:57.160835Z",
-        "name" : "plibPypi",
-        "version" : "1.9.28",
-        "id" : "661473917",
-        "createdAt" : "2025-01-08T09:54:57.160835Z"
-      } ]
     } ],
     "isImported" : false,
     "interimMode" : "Full",
