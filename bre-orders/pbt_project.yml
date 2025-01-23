@@ -92,7 +92,7 @@ functions:
       tags: []
       inputs: []
       outputs: []
-      author: nathan+demo2@prophecy.io
+      author: katherine@prophecy.io
       createdAt: '2022-12-15 18:04:50'
     businessRules/IdentifyHighValueCustomers:
       name: IdentifyHighValueCustomers
@@ -101,7 +101,7 @@ functions:
       tags: []
       inputs: []
       outputs: []
-      author: nathan+demo2@prophecy.io
+      author: katherine@prophecy.io
       createdAt: '2022-12-15 18:04:50'
 subgraphs: {}
 sqlModels: {}
