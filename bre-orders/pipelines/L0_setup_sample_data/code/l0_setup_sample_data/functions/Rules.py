@@ -12,7 +12,7 @@ def IdentifyHighValueCustomers(
         spending: Column=lambda: col("spending"), 
         total_order_amount: Column=lambda: col("total_order_amount")
 ):
-    return when((spending > lit(500)), struct(lit(1).alias("high_value_flag"), lit(None).alias("high_risk_flag")))\
-        .when((total_order_amount > lit(500)), struct(lit(1).alias("high_value_flag"), lit(None).alias("high_risk_flag")))\
-        .otherwise(struct(lit(0).alias("high_value_flag"), lit(None).alias("high_risk_flag")))\
-        .alias("IdentifyHighValueCustomers", metadata = get_column_metadata())
+    return when((spending > lit(500)), lit(1))\
+        .when((total_order_amount > lit(500)), lit(1))\
+        .otherwise(lit(0))\
+        .alias("high_value_flag")

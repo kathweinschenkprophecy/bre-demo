@@ -419,54 +419,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.metainfo.functions.businessRules.rules[1].data[0].outputs[1]",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "Output expression is empty at row = 2. Please provide a valid output expression. Default expression: NULL.",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.metainfo.functions.businessRules.rules[1].data[1].outputs[1]",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "Output expression is empty at row = 2. Please provide a valid output expression. Default expression: NULL.",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  }, {
-    "property" : "$.workflow.metainfo.functions.businessRules.rules[1].data[2].outputs[1]",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 2,
-    "message" : "Output expression is empty at row = 2. Please provide a valid output expression. Default expression: NULL.",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  } ]
+  }
 }
